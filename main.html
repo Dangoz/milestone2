@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Main Page</title>
+  <link href="webfile/stylesheet.css" rel="stylesheet">
+</head>
+<body>
+  <div class="grid-container">
+    <p class="title">Photo Album for Grayscale</p>
+
+    <form action="/upload" enctype="multipart/form-data" method="POST">
+      <div>Upload an image: <input type="file" accept="image/png" name="multipleFiles" multiple="multiple" /></div>
+      <input class="upload" type="submit" value="Upload" />
+    </form>
+
+    <div class="gallery">
+      <img src="webfile/sample.png">
+      <img src="webfile/sampleGrayscale.png">
+    </div>
+
+    <script src="webfile/photoUpdate.js"></script>
+  </div>
+
+</body>
+</html>

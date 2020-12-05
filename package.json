@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "unzip.js",
   "dependencies": {
+    "formidable": "^1.2.2",
     "node-fetch": "^2.6.0",
     "pngjs": "^3.4.0",
     "unzipper": "^0.10.5"

@@ -88,6 +88,7 @@ const grayScale = (pathIn, pathOut) => {
       }
   
       // pack to png and write to directory
+      console.log(`writing to ${path.join(pathOut, path.basename(pathIn))}`)
       this.pack().pipe(fs.createWriteStream(path.join(pathOut, path.basename(pathIn))));
     })
 
