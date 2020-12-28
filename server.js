@@ -22,6 +22,7 @@ const server = http.createServer((req, res) => {
         res.end;
       })
     })
+    return;
   }
 
   // reponse webpage and its assosicated files

@@ -39,7 +39,7 @@ const processGrayscale = () => {
         }
       });
     })
-    .then(() => resolve)
+    .then(() => resolve())
     .catch(err => reject(err));
   });
 };
