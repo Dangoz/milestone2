@@ -17,10 +17,9 @@ const server = http.createServer((req, res) => {
       processGrayscale()
       .then(() => {
 
-        console.log("grayscale processed");
         // response webpage upload to client
-        //responseFile(req, res);
-        //res.end;
+        responseFile(req, res);
+        res.end;
       })
     })
     return;
@@ -28,7 +27,6 @@ const server = http.createServer((req, res) => {
 
   // reponse webpage and its assosicated files
   responseFile(req, res);
-  console.log("responding");
 
   // update client gallery display, according to pngs in gallery
   readDir('gallery')
